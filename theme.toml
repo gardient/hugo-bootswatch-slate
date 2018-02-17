@@ -4,10 +4,10 @@
 name = "Hugo Bootswatch Slate"
 license = "MIT"
 licenselink = "https://github.com/gardient/hugo-bootswatch-slategit /blob/master/LICENSE.md"
-description = ""
+description = "A hugo theme based on the Slate Bootswatch theme "
 homepage = "https://gyulakerezsi.ro/"
-tags = []
-features = []
+tags = ['blog']
+features = ['blog']
 min_version = "0.36"
 
 [author]
