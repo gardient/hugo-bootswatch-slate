@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{ partialCached "head.html" . }}
+  </head>
+  <body>
+    {{ block "header" . }}
+      {{ partialCached "header.html" . }}
+    {{ end }}
+    <main role="main" class="container">
+      {{ block "main" . }}
+      {{ end }}
+    </main>
+    <footer class="container">
+      {{ block "footer" . }}
+        {{ partialCached "footer.html" . }}
+      {{ end }}
+    </footer>
+
+    {{ partialCached "javascript.html" . }}
+    {{ partialCached "google_analytics.html" . }}
+    {{ partialCached "piwik_analytics.html" . }}
+  </body>
+</html>

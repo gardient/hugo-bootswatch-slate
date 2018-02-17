@@ -1,21 +1,21 @@
 # theme.toml template for a Hugo theme
 # See https://github.com/gohugoio/hugoThemes#themetoml for an example
 
-name = "Hugo Bootswatch Slate"
-license = "MIT"
-licenselink = "https://github.com/gardient/hugo-bootswatch-slategit /blob/master/LICENSE.md"
-description = "A hugo theme based on the Slate Bootswatch theme "
-homepage = "https://gyulakerezsi.ro/"
-tags = ['blog']
+name = 'Hugo Bootswatch Slate'
+license = 'MIT'
+licenselink = 'https://github.com/gardient/hugo-bootswatch-slategit/blob/master/LICENSE.md'
+description = 'A hugo theme based on the Slate Bootswatch theme'
+homepage = 'https://gyulakerezsi.ro/'
+tags = ['blog', 'Bootstrap', 'Font Awesome', 'Highligh.js', 'dark']
 features = ['blog']
-min_version = "0.36"
+min_version = '0.36'
 
 [author]
-  name = "gardient"
-  homepage = "https://gyulakerezsi.ro"
+  name = 'gardient'
+  homepage = 'https://gyulakerezsi.ro/'
 
 # If porting an existing theme
 [original]
-  name = "Slate"
-  homepage = "https://bootswatch.com/slate/"
-  repo = "https://github.com/thomaspark/bootswatch/tree/master/dist/slate"
+  name = 'Slate'
+  homepage = 'https://bootswatch.com/slate/'
+  repo = 'https://github.com/thomaspark/bootswatch/tree/master/dist/slate'

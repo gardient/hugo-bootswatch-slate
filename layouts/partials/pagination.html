@@ -1,0 +1,38 @@
+{{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
+  {{ $paginator := .Paginator }}
+  <nav aria-label="Pagination">
+    <ul class="pagination">
+      <li class="page-item{{ if not $paginator.HasPrev }} disabled{{ end }}">
+        <a href="{{ if $paginator.HasPrev }}{{ $paginator.Prev.URL }}{{ else }}#{{ end }}" class="page-link" title="Previous page">
+          <i class="fa fa-angle-left"></i>
+        </a>
+      </li>
+      <li class="page-item">
+        <a href="{{ $paginator.First.URL }}" class="page-link" title="First page">
+          <i class="fa fa-angle-double-left"></i>
+        </a>
+      </li>
+      {{ range $paginator.Pagers }}
+        {{ if eq .PageNumber $paginator.PageNumber }}
+          <li class="page-item disabled">
+            <a href="#" class="page-link">{{ .PageNumber }}</a>
+          </li>
+        {{ else }}
+          <li class="page-item">
+            <a href="{{ .URL }}" class="page-link">{{ .PageNumber }}</a>
+          </li>
+        {{ end }}
+      {{ end }}
+      <li class="page-item">
+        <a href="{{ $paginator.Last.URL }}" class="page-link" title="Last page">
+          <i class="fa fa-angle-double-right"></i>
+        </a>
+      </li>
+      <li class="page-item{{ if not $paginator.Next }} disabled{{ end }}">
+        <a href="{{ if $paginator.HasNext }}{{ $paginator.Next.URL }}{{ else }}#{{ end }}" class="page-link" title="Next page">
+          <i class="fa fa-angle-right"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+{{ end }}
