@@ -42,6 +42,7 @@ custom_css = []
   - [x] default google analitycs template added to base
   - [x] added highlight.js
 - [x] Set up homepage template
+  - [x] Post summry template
 - [ ] Complete readme
 - [ ] Add list page template to post section
 - [ ] Add taxonomy templates
