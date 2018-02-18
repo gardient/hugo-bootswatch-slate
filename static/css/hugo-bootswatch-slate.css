@@ -1,3 +1,13 @@
 body.navbar-fixed-top {
   padding-top: 4.5rem
 }
+
+pre {
+  color: var(--light);
+  background-color: var(--gray-dark);
+}
+
+pre code {
+  display: block;
+  padding: 0.5rem;
+}
