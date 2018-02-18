@@ -1,0 +1,43 @@
+baseurl = "http://hugo.spf13.com/"
+title = "Hugo Themes"
+author = "Steve Francia"
+copyright = "Copyright (c) 2008 - 2014, Steve Francia; all rights reserved."
+canonifyurls = true
+paginate = 3
+
+[params]
+fixednav = true
+showbrand = false
+highlightjs = 'vs2015'
+highlightjs_extra_languages = ['yaml']
+
+[social]
+twitter = 'example'
+gnusocial = 'example'
+facebook = 'example'
+googleplus = 'example'
+weibo = 'example'
+tumbler = 'example'
+instagram = 'example'
+flickr = 'example'
+photo500px = 'example'
+pinterest = 'example'
+youtube = 'example'
+vimeo = 'example'
+vine = 'example'
+slideshare = 'example'
+deviantart = 'example'
+linkedin = 'example'
+xing = 'example'
+reddit = 'example'
+hackernews = 'example'
+github = 'example'
+gitlab = 'example'
+bitbucket = 'example'
+stackoverflow = 'example'
+serverfault = 'example'
+steam = 'example'
+mobygames = 'example'
+lastfm = 'example'
+discogs = 'example'
+keybase = 'example'
