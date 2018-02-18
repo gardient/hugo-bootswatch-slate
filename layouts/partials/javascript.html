@@ -11,8 +11,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha256-JNyuT3QsYBdyeKxKBwnGJAJiACWcow2TjhNruIFFPMQ=" crossorigin="anonymous"></script>
 
-<script src="{{ .Site.BaseURL }}js/hugo-bootswatch-slate.js"></script>
+<script src="/js/hugo-bootswatch-slate.js"></script>
 
 {{ range .Site.Params.custom_js }}
-<script src="{{ $.Site.BaseURL }}{{ . }}"></script>
+<script src="{{ . }}"></script>
 {{ end }}
