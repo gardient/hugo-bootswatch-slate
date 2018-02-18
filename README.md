@@ -44,5 +44,5 @@ custom_css = []
 - [x] Set up homepage template
   - [x] Post summry template
 - [ ] Complete readme
-- [ ] Add list page template to post section
-- [ ] Add taxonomy templates
+- [x] Add list page template to post section
+- [x] Add taxonomy templates
