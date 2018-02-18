@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    {{ partialCached "head.html" . }}
+    {{ partial "head" . }}
+    {{ partial "title" . }}
   </head>
-  <body>
+  <body{{ if and (isset $.Site.Params "fixednav") $.Site.Params.fixednav }} class="navbar-fixed-top"{{ end }}>
     {{ block "header" . }}
-      {{ partialCached "header.html" . }}
+      {{ partial "nav" . }}
     {{ end }}
     <main role="main" class="container">
       {{ block "main" . }}
@@ -13,12 +14,11 @@
     </main>
     <footer class="container">
       {{ block "footer" . }}
-        {{ partialCached "footer.html" . }}
+        {{ partial "footer" . }}
       {{ end }}
     </footer>
 
-    {{ partialCached "javascript.html" . }}
-    {{ partialCached "google_analytics.html" . }}
-    {{ partialCached "piwik_analytics.html" . }}
+    {{ partial "javascript" . }}
+    {{ template "_internal/google_analytics_async.html" . }}
   </body>
 </html>

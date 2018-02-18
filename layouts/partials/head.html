@@ -5,8 +5,6 @@
 <meta name="description" content="{{ if .IsNode }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ else }}{{ with .Description }}{{ . }}{{ end }}{{ end }}">
 {{ .Hugo.Generator }}
 
-<title>{{ if .IsHome }}{{ .Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
-
 <!-- CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.0.0-beta.3/slate/bootstrap.min.css" integrity="sha256-XuLfpTfBrr1SFUTEBsuCZAyEL9FaMqJHX6v2Clowmu8=" crossorigin="anonymous" />
 

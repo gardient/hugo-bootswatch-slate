@@ -1,2 +1,4 @@
 /* globals hljs */
-if (hljs !== null) hljs.initHighlightingOnLoad()
+;(function () {
+  if (typeof hljs !== 'undefined' && hljs != null) hljs.initHighlightingOnLoad()
+})()
