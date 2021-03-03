@@ -3,7 +3,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 <meta name="description" content="{{ if .IsNode }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ else }}{{ with .Description }}{{ . }}{{ end }}{{ end }}">
-{{ .Hugo.Generator }}
+{{ hugo.Generator }}
 
 <!-- CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.0.0-beta.3/slate/bootstrap.min.css" integrity="sha256-XuLfpTfBrr1SFUTEBsuCZAyEL9FaMqJHX6v2Clowmu8=" crossorigin="anonymous" />
@@ -14,11 +14,6 @@
 
 {{ with .Site.Params.highlightjs }}
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/{{ . }}.min.css">
-{{ end }}
-
-<!-- RSS -->
-{{ if .RSSLink }}
-  <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href="{{ .RSSLink }}" />
 {{ end }}
 
 {{ partial "favicon.html" . }}

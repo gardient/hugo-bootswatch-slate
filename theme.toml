@@ -3,12 +3,12 @@
 
 name = 'Hugo Bootswatch Slate'
 license = 'MIT'
-licenselink = 'https://github.com/gardient/hugo-bootswatch-slategit/blob/master/LICENSE.md'
+licenselink = 'https://github.com/gardient/hugo-bootswatch-slate/blob/master/LICENSE.md'
 description = 'A hugo theme based on the Slate Bootswatch theme'
 homepage = 'https://gyulakerezsi.ro/'
 tags = ['blog', 'Bootstrap', 'Font Awesome', 'Highligh.js', 'dark']
-features = ['blog']
-min_version = '0.36'
+features = ['blog', 'HighlightJS']
+min_version = '0.60.0'
 
 [author]
   name = 'gardient'
