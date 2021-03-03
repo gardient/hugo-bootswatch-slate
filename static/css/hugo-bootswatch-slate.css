@@ -11,3 +11,9 @@ pre code {
   display: block;
   padding: 0.5rem;
 }
+
+blockquote {
+    margin-left: 0.5rem;
+    border-left: 0.25rem solid var(--secondary);
+    padding-left: 0.5rem;
+}
