@@ -1,17 +1,13 @@
 {{ define "main" }}
-  <div class="header">
+  <div class="header mb-4">
     <h1>{{ .Title }}</h1>
     <h2>{{ .Description }}</h2>
+    {{ partial "post-meta.html" . }}
   </div>
   <div class="content">
-
-    {{ partial "post-meta.html" . }}
-
     {{ .Content }}
-
-    {{ partial "prev-next-post.html" . }}
-
-    {{ partial "disqus.html" . }}
-
   </div>
+  {{ partial "prev-next-post.html" . }}
+
+  {{ partial "disqus.html" . }}
 {{ end }}
