@@ -10,10 +10,10 @@
 
 <link rel="stylesheet" href="/css/hugo-bootswatch-slate.css">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+<link rel="stylesheet" href="/css/font-awesome.min.css" />
 
 {{ with .Site.Params.highlightjs }}
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/{{ . }}.min.css">
+  <link rel="stylesheet" href="/css/hljs/{{ . }}.css">
 {{ end }}
 
 {{ partial "favicon.html" . }}
