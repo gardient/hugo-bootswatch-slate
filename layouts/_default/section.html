@@ -1,9 +1,12 @@
 {{ define "main" }}
   <div class="header">
     <h1>{{ .Title }}</h1>
+    {{ with .Description }}<h1>{{ .Description }}</h1>{{end}}
   </div>
   <div class="content">
-    {{ $paginator := .Paginate .Pages }}
+    {{ .Content }}
+  </div>
+  <div class="pages">
     {{ range .Paginator.Pages }}
       {{ .Render "summary" }}
     {{ end }}

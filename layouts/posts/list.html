@@ -4,7 +4,7 @@
   </div>
   <div class="content">
     {{ $paginator := .Paginate .Pages }}
-    {{ range $paginator.Pages }}
+    {{ range .Paginator.Pages }}
       {{ .Render "summary" }}
     {{ end }}
 
